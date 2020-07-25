@@ -116,6 +116,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Informative git prompt
+GIT_PROMPT_ONLY_IN_REPO=1
+GIT_PROMPT_THEME=Default_Ubuntu
+
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source $HOME/.bash-git-prompt/gitprompt.sh
+fi
+
 set -o vi
 
 export VISUAL=vim
