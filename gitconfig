@@ -3,3 +3,5 @@
 	email = binh.q.nguyen527@gmail.com
 [alias]
 	graph = log --all --graph --decorate --oneline
+[core]
+	excludesFile = /home/binhq/.gitignore_global

@@ -4,6 +4,7 @@
     ~/.bashrc: bashrc
     ~/.bash_aliases: bash_aliases
     ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
     ~/.inputrc: inputrc
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
