@@ -1,3 +1,5 @@
 [user]
 	name = Binh Nguyen
 	email = binh.q.nguyen527@gmail.com
+[alias]
+	graph = log --all --graph --decorate --oneline
