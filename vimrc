@@ -30,8 +30,9 @@ endif
 " Enable syntax highlighting
 syntax on
 
-" Add optional packages.
-"
+"----------------------------------------------------------------------------}}}
+" PLUGINS {{{
+
 " The matchit plugin makes the % command work better, but it is not backwards
 " compatible.
 " The ! means the package won't be loaded right away but when plugins are
