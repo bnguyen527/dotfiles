@@ -271,23 +271,25 @@ nnoremap j gj
 nnoremap k gk
  
 " Open/close folds
-nnoremap <space> za
+nnoremap <Space> za
 
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
-nnoremap <C-L> :nohl<CR><C-L>
+nnoremap <C-L> :nohlsearch<CR><C-L>
  
 " Set comma as leader
 let mapleader=","
 
-" Save session. To reopen session, use vim -S. Mapped to ,s, as "super save."
-nnoremap <leader>s :mksession<CR>
+" Save session. To reopen session, use vim -S. Mapped to ,s as "super save."
+nnoremap <Leader>s :mksession<CR>
 
-" Source $MYVIMRC reloads the saved $MYVIMRC
-:nmap <Leader>s :source $MYVIMRC
+" Source $MYVIMRC reloads the saved $MYVIMRC. (Mnemonic for the key sequence
+" is 's'ource 'v'imrc).
+nnoremap <silent> <Leader>sv :source $MYVIMRC<CR>
 
-" Opens $MYVIMRC for editing, or use :tabedit $MYVIMRC
-:nmap <Leader>v :e $MYVIMRC
+" Opens $MYVIMRC for editing in a new tab. (Mnemonic for the key sequence is
+" 'e'dit 'v'imrc).
+nnoremap <silent> <Leader>ev :tabedit $MYVIMRC<CR>
 
 "----------------------------------------------------------------------------}}}
 
