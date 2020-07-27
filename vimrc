@@ -20,16 +20,6 @@ if &compatible
   set nocompatible
 endif
  
-" Attempt to determine the type of a file based on its name and possibly its
-" contents. Use this to allow intelligent auto-indenting for each filetype,
-" and for plugins that are filetype specific.
-if has('autocmd')
-  filetype indent plugin on
-endif
- 
-" Enable syntax highlighting
-syntax on
-
 "----------------------------------------------------------------------------}}}
 " PLUGINS {{{
 
@@ -41,8 +31,28 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
  
-" Runtime path for CtrlP plugin.
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" VIM-PLUG
+" Automatic installation
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+" Register vim-plug as a plugin for Vim help for vim-plug itself.
+Plug 'junegunn/vim-plug'
+
+" ctrlp.vim fuzzy finder
+Plug 'ctrlpvim/ctrlp.vim'
+
+" fugitive.vim Git wrapper
+Plug 'tpope/vim-fugitive'
+
+" Initialize plugin system
+call plug#end()
 
 "----------------------------------------------------------------------------}}}
 " GENERAL {{{
