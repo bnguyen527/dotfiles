@@ -51,6 +51,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 " fugitive.vim Git wrapper
 Plug 'tpope/vim-fugitive'
 
+" ALE (Asynchronous Lint Engine)
+Plug 'dense-analysis/ale'
+
 " Initialize plugin system
 call plug#end()
 
@@ -301,6 +304,10 @@ nnoremap <silent> <Leader>sv :source $MYVIMRC<CR>
 " Opens $MYVIMRC for editing in a new tab. (Mnemonic for the key sequence is
 " 'e'dit 'v'imrc).
 nnoremap <silent> <Leader>ev :tabedit $MYVIMRC<CR>
+
+" Move between ALE warnings and errors quickly.
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 "----------------------------------------------------------------------------}}}
 
