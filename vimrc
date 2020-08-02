@@ -167,7 +167,7 @@ set lazyredraw
 set notimeout ttimeout ttimeoutlen=100
  
 " Use <F11> to toggle between 'paste' and 'nopaste'
-set pastetoggle=<F11>
+set pastetoggle=<F2>
 
 if v:version > 703 || v:version == 703 && has("patch541")
   set formatoptions+=j " Delete comment character when joining commented lines
