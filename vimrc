@@ -19,7 +19,7 @@ source $VIMRUNTIME/defaults.vim
 if &compatible
   set nocompatible
 endif
- 
+
 "----------------------------------------------------------------------------}}}
 " PLUGINS {{{
 
@@ -30,7 +30,7 @@ endif
 if has('syntax') && has('eval')
   packadd! matchit
 endif
- 
+
 " VIM-PLUG
 " Automatic installation
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -59,7 +59,7 @@ call plug#end()
 
 "----------------------------------------------------------------------------}}}
 " GENERAL {{{
- 
+
 " Vim with default settings does not allow easy switching between multiple files
 " in the same editor window. Users can use multiple split windows or multiple
 " tab pages to edit multiple files, but it is still best to enable an option to
@@ -78,7 +78,7 @@ set hidden
 " Better command-line completion
 set wildmenu
 set wildignore=*.o,*.obj,*.bak,*.exe
- 
+
 " Do incremental searching when it's possible to timeout.
 if has('reltime')
   set incsearch
@@ -135,19 +135,19 @@ set shortmess+=I
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
 set confirm
- 
+
 set autoread
 
 set noerrorbells
 
 " Use visual bell instead of beeping when doing something wrong
 set visualbell
- 
+
 " And reset the terminal code for the visual bell. If visualbell is set, and
 " this line is also included, vim will neither flash nor beep. If visualbell
 " is unset, this does nothing.
 set t_vb=
- 
+
 " In many terminal emulators the mouse works just fine.  By enabling it you
 " can position the cursor, Visually select and scroll with the mouse.
 " Only xterm can grab the mouse events when using the shift key, for other
@@ -165,7 +165,7 @@ set lazyredraw
 
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=100
- 
+
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F2>
 
@@ -175,7 +175,7 @@ endif
 
 " Do not recognize octal numbers for Ctrl-A and Ctrl-X, most users find it
 " confusing.
-set nrformats-=octal 
+set nrformats-=octal
 
 if &encoding ==# 'latin1' && has('gui_running')
   set encoding=utf-8
@@ -193,20 +193,20 @@ set autoindent
 set shiftwidth=4
 set softtabstop=4
 set expandtab
- 
+
 "----------------------------------------------------------------------------}}}
 " APPEARANCE {{{
 
 " Show partial commands in the last line of the screen
 set showcmd
- 
+
 " Display the cursor position on the last line of the screen or in the status
 " line of a window
 set ruler
 
 " Show a few lines of context around the cursor.  Note that this makes the
 " text scroll if you mouse-click near the start or end of the window.
-set scrolloff=5 
+set scrolloff=5
 
 " Show a few columns of context around the cursor.
 set sidescrolloff=5
@@ -226,10 +226,10 @@ set laststatus=2
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
 set cmdheight=2
- 
+
 " Display line numbers on the left
 set number
- 
+
 " This enables relative line numbering mode. With both number and
 " relativenumber enabled, the current line shows the true line number, while
 " all other lines (above and below) are numbered relative to the current line.
@@ -259,7 +259,7 @@ set foldmethod=syntax
 
 "----------------------------------------------------------------------------}}}
 " MAPPINGS {{{
- 
+
 " Try to prevent bad habits like using the arrow keys for movement. This is
 " not the only possible bad habit. For example, holding down the h/j/k/l keys
 " for movement, rather than using more efficient movement commands, is also a
@@ -297,7 +297,7 @@ nnoremap <Space> za
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohlsearch<CR><C-L>
- 
+
 " Set comma as leader
 let mapleader=","
 
