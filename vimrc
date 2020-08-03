@@ -283,7 +283,10 @@ map Y y$
 " Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
- 
+
+" Select the last changed (or pasted) text with the visual mode last used
+nnoremap <expr> gp '`[' . strpart(getregtype(), 0, 1) . '`]'
+
 " Open/close folds
 nnoremap <Space> za
 
