@@ -238,6 +238,10 @@ set number
 " down.
 set relativenumber
 
+" Enable list mode
+set list
+
+" Set list characters
 if &listchars ==# 'eol:$'
   set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 endif
