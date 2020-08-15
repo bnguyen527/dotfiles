@@ -54,6 +54,9 @@ Plug 'tpope/vim-fugitive'
 " ALE (Asynchronous Lint Engine)
 Plug 'dense-analysis/ale'
 
+" Emmet-vim support for expanding abbreviations
+Plug 'mattn/emmet-vim'
+
 " Initialize plugin system
 call plug#end()
 
