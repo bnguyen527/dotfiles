@@ -120,6 +120,9 @@ fi
 [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
     . /usr/share/bash-completion/bash_completion
 
+# Gradle tab completion
+source /etc/bash_completion.d/gradle-completion.bash
+
 # Informative git prompt
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=Default_Ubuntu
