@@ -131,3 +131,7 @@ export VISUAL=vim
 export EDITOR='vim -e'
 
 source /home/binhq/.config/broot/launcher/bash/br
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/binhq/.sdkman"
+[[ -s "/home/binhq/.sdkman/bin/sdkman-init.sh" ]] && source "/home/binhq/.sdkman/bin/sdkman-init.sh"
