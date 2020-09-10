@@ -137,6 +137,12 @@ set -o vi
 export VISUAL=vim
 export EDITOR='vim -e'
 
+# Android SDK Tools PATH
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH="$ANDROID_SDK_ROOT/tools:$PATH"
+export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
+export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
+
 source /home/binhq/.config/broot/launcher/bash/br
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
