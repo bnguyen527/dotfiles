@@ -139,9 +139,9 @@ export EDITOR='vim -e'
 
 # Android SDK Tools PATH
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH="$ANDROID_SDK_ROOT/tools:$PATH"
-export PATH="$ANDROID_SDK_ROOT/emulator:$PATH"
-export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
+export PATH="$PATH:$ANDROID_SDK_ROOT/tools"
+export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
 source /home/binhq/.config/broot/launcher/bash/br
 
