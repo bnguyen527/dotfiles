@@ -57,6 +57,9 @@ Plug 'dense-analysis/ale'
 " Emmet-vim support for expanding abbreviations
 Plug 'mattn/emmet-vim'
 
+" kotlin-vim Kotlin plugin
+Plug 'udalov/kotlin-vim'
+
 " Initialize plugin system
 call plug#end()
 
