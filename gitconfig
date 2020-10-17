@@ -5,3 +5,4 @@
 	graph = log --all --graph --decorate --oneline
 [core]
 	excludesFile = /home/binhq/.gitignore_global
+	autocrlf = input
